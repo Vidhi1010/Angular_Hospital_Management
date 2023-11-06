@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="ClinicConnect ,ClinicConnect.COM,ClinicConnect WEBSITE, MEDICAN"
+    />
+    <meta name="description" content="India's best hospital website" />
+    <meta name="author" content="ClinicConnect hospital.com" />
+    <title>ClinicConnect</title>
+  </head>
+
+  <body >
+    <section>
+      <div class="w-80" style="padding: 0">
+        <img class="imgg" src="https://hso.info/wp-content/uploads/2020/03/Many-Different-Medical-Professionals-can-engage-in-Malpractice-1.jpg" alt="">
+          <header>
+            <div class="menu">
+              <div class="brand-name">
+                <a href="#">
+                  <h2 class="animated flash" style="margin-top: 5%;font-family: Kenia;color: rgb(12, 2, 59);font-size: 3rem;">
+                   &nbsp; ClinicConnect
+                  </h2>
+
+                </a>
+              </div>
+              <nav>
+                <ul>
+                  <li><a (click)="scrollTo('home')">Home</a></li>
+                  <li><a (click)="scrollTo('about')">About us</a></li>
+                  <li><a (click)="scrollTo('services')">Services</a></li>
+                  <li><a (click)="scrollTo('gal')">Gallery</a></li>
+                  <li><a (click)="scrollTo('Contact')">Book Appointment</a></li>
+                </ul>
+              </nav>
+            </div>
+            <hr width="100%"  style="color: rgb(6, 50, 71);margin-top: 20px;">
+          </header>
+          <div class="section-bg-box">
+            <h1 class="animated slideInLeft">Our expertise At your Service</h1>
+
+          <div class="boss">
+          <a class="b1 animated slideInLeft" href="#about">Explore Our Website</a>
+          <a class="b2 animated bounce" href="#services">Our Services </a>
+          <a class="b3 animated slideInRight " href="#Contact">Book an Appointment </a>
+        </div>
+      </div>
+      </div>
+        <!-- text decoration coding -->
+        <br />
+        <br />
+
+        <h1 class="welcome-text" style="margin-left: 5%" id="services">
+          OUR OUTSTANDING SERVICES
+        </h1>
+        <br />
+        <div class="nextcontent ngsReveal" >
+          <div class="department animated slideInLeft" style="text-align: center">
+            <h2 style="text-align: center">What We Offer!</h2>
+
+            <ul>
+              <img src="../../assets/home-img.svg" width="70%" />
+              <li>QR Scan Prescription</li>
+              <li>Customer Support</li>
+              <li>Emergency Contraception</li>
+            </ul>
+          </div>
+          <div class="department2 bounce" style="text-align: center">
+            <h2 >Best Doctors</h2>
+
+            <ul>
+              <img src="../../assets/about-img.svg" width="70%" />
+              <li>Surgeon</li>
+              <li>Dentist</li>
+              <li>Gynicologist</li>
+              <li>orthologist</li>
+              <li>Lungs specialist</li>
+              <li>kidney specialist</li>
+            </ul>
+          </div>
+          <div class="department3 animated slideInRight" style="text-align: center">
+            <h2 style="text-align: center">Up To Date</h2>
+
+            <ul>
+              <img src="../../assets/book-img.svg" width="70%" />
+              <li>Reliable Services</li>
+              <li>24-7 Availibility</li>
+              <li>Medicine at ease</li>
+              <li>End to End Security</li>
+              <li>Customer Care Support</li>
+            </ul>
+          </div>
+        </div>
+        <br />
+
+        <br />
+        <h1 class="welcome-text" style="width: 25%"  id="about">about us</h1>
+        <br />
+
+        <div class="about-box">
+          <div>
+            <h2>Best Medical & Health care Needs to Our Patients</h2>
+            <p style="margin-top: 3%;">
+              At ClinicConnect, our mission is to provide the best medical and healthcare solutions to meet the diverse needs of our valued patients.We take pride in our state-of-the-art facilities and cutting-edge technology, which enable us to offer accurate diagnostics and effective treatments.
+            </p>
+            <p>
+              We prioritize your well-being and ensure that you receive personalized, compassionate, and top-notch medical care
+            </p>
+            <p>
+              Your health is our priority, and we strive to ensure your journey to recovery is seamless and comfortable. Trust ClinicConnect for your medical and healthcare needs.
+            </p>
+            <p>
+              Our dedicated team of experienced healthcare professionals is committed to delivering a wide range of services, from preventive care to specialized treatments, in a safe and nurturing environment.
+            </p>
+          </div>
+          <div>
+            <img src="../../assets/5.jpg" width="100%" style="border-radius: 20px;" />
+          </div>
+        </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("nav ul li a");
+
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

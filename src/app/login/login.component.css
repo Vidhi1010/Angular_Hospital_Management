@@ -1,0 +1,100 @@
+.contact {
+  margin-left: 20vw;
+  margin-top: 10vh;
+  border-radius: 10px;
+  width:80%;
+  height: 100%;
+  overflow-x:hidden ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
+.container1 {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 65%;
+  padding: 5%;
+}
+.cont{
+  display: flex;
+  font-family: Agbalumo;
+  font-size: 1.2rem;
+  color: #0f053d;
+  font-weight: 900;
+  text-align: left;
+  flex-direction: column;
+}
+
+.container1 img {
+  height: 250px;
+  width: 400px;
+  margin-right: 12px;
+}
+
+form {
+  margin: 5px;
+  padding-left: 5px;
+  width: 85%;
+}
+
+input[type="text"], textarea {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #add8e6;
+  color: #000;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  background-color: #2506ad;
+  box-shadow: 0 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  color: #fff;
+  margin-left: 70%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0;
+}
+footer {
+  width: 100%;
+  height: 20%;
+  background: black;
+  color: white;
+  padding: 30px 0px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+footer .footer-box {
+  width: 25%;
+  height: auto;
+  margin-left: 10%;
+}
+
+footer .footer-box a {
+  display: block;
+  font-family: Gotu;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+footer .footer-box a:hover {
+  text-decoration: none;
+  color: red;
+}
